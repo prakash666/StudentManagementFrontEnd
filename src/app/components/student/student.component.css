@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .fancy-table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fancy-table th, .fancy-table td {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .fancy-table thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .fancy-table th {
+    font-weight: 700;
+  }
+  
+  .fancy-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .fancy-table tbody tr:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  /* Previous styles remain unchanged */
+
+.delete-button, .update-button {
+  padding: 8px 12px;
+  margin: 4px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.update-button {
+  background-color: #007bff;
+}
+
+.delete-button:hover, .update-button:hover {
+  background-color: #c82333;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+  

@@ -1,0 +1,31 @@
+<div class="table-container">
+    <table class="fancy-table">
+      <thead>
+        <tr>
+            <th>Id</th>
+          <th>firstName</th>
+          <th>lastName</th>
+          <th>address</th>
+          <th>PhoneNum</th>
+          <th>Gender</th>
+          <th>Grade</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let studendata of studentList">
+            <td>{{studendata.id}}</td>
+            <td>{{studendata.firstName}}</td>
+            <td>{{studendata.lastName}}</td>
+          <td>{{studendata.address}}</td>
+          <td>{{studendata.phoneNum}}</td>
+          <td>{{studendata.gender}}</td>
+          <td>{{studendata.grade}}</td>
+          <td>
+            <button class="delete-button">Delete</button>
+            <button class="update-button">Update</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
